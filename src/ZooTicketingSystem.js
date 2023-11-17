@@ -8,7 +8,7 @@ class ZooTicketingSystem {
   }
 
   start() {
-    console.log('Welcome to Zoo Ticketing System');
+    console.log('Welcome to the Zoo');
     this.addGuestsPrompt();
     this.displayTicketDetails();
   }
