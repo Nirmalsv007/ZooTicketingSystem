@@ -1,7 +1,6 @@
-import { calculateEntrancePrice } from './Pricing';
+import Pricing from './Pricing.js'
 
 class Ticket {
-
   constructor() {
     this.guests = [];
     this.totalCharges = 0;
@@ -13,7 +12,7 @@ class Ticket {
   }
 
   calculateCharges(age) {
-    this.totalCharges += calculateEntrancePrice(age);
+    this.totalCharges += Pricing.calculateEntrancePrice(age);
   }
 
   displayTicketDetails() {
@@ -24,4 +23,4 @@ class Ticket {
   }
 }
 
-export default Ticket;
+export default Ticket
