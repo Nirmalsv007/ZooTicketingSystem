@@ -9,11 +9,11 @@ class ZooTicketingSystem {
 
   start() {
     console.log('Welcome to the Zoo');
-    this.addGuestsPrompt();
+    this.collectGuestInfo();
     this.displayTicketDetails();
   }
 
-  addGuestsPrompt() {
+  collectGuestInfo() {
     while (true) {
       const ageInput = question('Enter guest age (or "done" to finish): ');
 

@@ -8,10 +8,10 @@ class Ticket {
 
   addGuest(age) {
     this.guests.push({ age });
-    this.calculateCharges(age);
+    this.calculateCost(age);
   }
 
-  calculateCharges(age) {
+  calculateCost(age) {
     this.totalCharges += Pricing.calculateEntrancePrice(age);
   }
 
