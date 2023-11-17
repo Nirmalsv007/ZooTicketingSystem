@@ -17,7 +17,9 @@ class ZooTicketingSystem {
     while (true) {
       const ageInput = question('Enter guest age (or "done" to finish): ');
 
-      if (this.isDone(ageInput)) break;
+      if (this.isDone(ageInput)) {
+        break;
+      }
 
       const age = parseInt(ageInput, 10);
       this.processGuestAge(age);
